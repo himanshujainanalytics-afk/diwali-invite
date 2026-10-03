@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="hi">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Housewarming & Diwali · The Jain Family</title>
-<meta name="description" content="The Jain Family invites you to a Housewarming & Diwali Celebration — Saturday, Oct 31, 12 noon, Frisco TX. Kindly RSVP by October 10.">
-<meta property="og:title" content="You're invited — A Housewarming & Diwali Celebration 🪔">
-<meta property="og:description" content="Saturday, October 31 · 12 noon · Frisco, TX. Kindly RSVP by October 10. — The Jain Family">
+<title>गृह प्रवेश एवं दीपावली · जैन परिवार</title>
+<meta name="description" content="जैन परिवार आपको गृह प्रवेश एवं दीपावली उत्सव में सादर आमंत्रित करता है — शनिवार, 31 अक्टूबर, दोपहर 12 बजे, Frisco TX. कृपया 10 अक्टूबर तक RSVP करें।">
+<meta property="og:title" content="सादर आमंत्रण — गृह प्रवेश एवं दीपावली उत्सव 🪔">
+<meta property="og:description" content="शनिवार, 31 अक्टूबर · दोपहर 12 बजे से · Frisco, TX. कृपया 10 अक्टूबर तक RSVP करें। — जैन परिवार">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪔</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&family=Tiro+Devanagari+Hindi&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --night:#1a0710; --plum:#3b0b1c; --wine:#5e1228; --gold:#e6b85c; --gold-hi:#fbe3a6; --gold-lo:#a87a2c;
@@ -184,6 +184,33 @@
     .countdown div{min-width:62px}
   }
   @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+
+  /* ---------- Hindi typography (Devanagari must not be letter-spaced or uppercased) ---------- */
+  body{font-family:'Mukta','Jost',system-ui,sans-serif}
+  h1,h2,.hello,.note p,.feast b,footer .bye{font-family:'Tiro Devanagari Hindi','Cormorant Garamond',serif}
+  h1{line-height:1.25; padding-top:.1em; font-size:clamp(40px,10vw,66px); font-weight:400}
+  h1 .amp{font-style:normal; font-size:.6em}
+  h2{font-weight:400; line-height:1.3}
+  .hello{font-style:normal; font-weight:400}
+  .presents,.tag,.when,.kicker,.countdown span,.note small,footer small,.cta{font-family:'Mukta','Jost',sans-serif; letter-spacing:.02em; text-transform:none}
+  .presents{font-size:16px; font-weight:500}
+  .tag{font-size:clamp(16px,4.2vw,19px); font-weight:500}
+  .when{font-size:clamp(16px,4.2vw,18px); letter-spacing:.01em; line-height:1.8}
+  .when b{font-size:clamp(22px,5.8vw,28px); letter-spacing:.01em}
+  .kicker{font-size:15px; font-weight:500}
+  .countdown span{font-size:13px}
+  .note p{font-style:normal; line-height:1.7}
+  .note small,footer small{font-size:15px; font-weight:500}
+  .cta{font-weight:700; font-size:16px}
+  .sub,.lead,.feast small,.row span{font-size:16px}
+  footer .bye{font-weight:400; line-height:1.4}
+  /* RSVP portion stays English */
+  #rsvp{font-family:'Jost',system-ui,sans-serif}
+  #rsvp h2,#rsvp .thanks h3{font-family:'Cormorant Garamond',serif; font-weight:700; line-height:1.08}
+  #rsvp label{font-family:'Cinzel',serif; letter-spacing:.2em; text-transform:uppercase}
+  #rsvp .cta{font-family:'Cinzel',serif; letter-spacing:.14em; font-size:14px}
+  #rsvp .kicker{font-family:'Mukta',sans-serif}
+  #rsvp .lead,#rsvp .total{font-size:14px}
 </style>
 </head>
 <body>
@@ -198,46 +225,46 @@
     <svg class="corner bl" viewBox="0 0 46 46" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 44V14C2 7 7 2 14 2h30"/><path d="M8 44V18c0-6 4-10 10-10h26"/><circle cx="14" cy="14" r="3" fill="currentColor"/></svg>
     <svg class="corner br" viewBox="0 0 46 46" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 44V14C2 7 7 2 14 2h30"/><path d="M8 44V18c0-6 4-10 10-10h26"/><circle cx="14" cy="14" r="3" fill="currentColor"/></svg>
 
-    <p class="hello" id="hello">Dear friends &amp; family,</p>
+    <p class="hello" id="hello">प्रिय मित्रों एवं परिवारजनों,</p>
     <div class="mandala" aria-hidden="true"><svg id="mandala" viewBox="-100 -100 200 200"></svg><span class="diya">🪔</span></div>
-    <p class="presents">The Jain Family requests the pleasure of your company</p>
-    <h1 class="foil">Housewarming<br><span class="amp">&amp;</span> Diwali</h1>
-    <p class="tag">A Celebration of Light &amp; New Beginnings</p>
+    <p class="presents">जैन परिवार आपको सादर आमंत्रित करता है</p>
+    <h1 class="foil">गृह प्रवेश<br><span class="amp">एवं</span> दीपावली</h1>
+    <p class="tag">प्रकाश एवं नई शुरुआत का उत्सव</p>
 
     <div class="flourish" aria-hidden="true">✦</div>
 
     <div class="when">
-      <b>Saturday · October 31, 2026</b>
-      From Twelve Noon<br>
+      <b>शनिवार · 31 अक्टूबर 2026</b>
+      दोपहर 12 बजे से<br>
       15798 Mandrake Trail · Frisco, Texas
     </div>
 
     <p class="sub" id="sub">
-      A new home, a festival of lights, and the people we love most — under one roof.
-      Join us as we open our doors for the very first time, light the diyas together,
-      and celebrate <strong>Diwali</strong> the way it's meant to be: with family, friends and a grand festive feast.
+      नया घर, दीपों का त्योहार, और हमारे सबसे प्रिय लोग — एक ही छत के नीचे।
+      हमारे नए घर के द्वार पहली बार खुलने के इस शुभ अवसर पर आइए, साथ मिलकर दीये जलाएँ
+      और <strong>दीपावली</strong> को परिवार, मित्रों और भव्य उत्सव-भोज के साथ धूमधाम से मनाएँ।
     </p>
 
     <div class="cta-wrap">
-      <a class="cta" href="#rsvp">RSVP NOW</a>
-      <span class="deadline">Kindly respond by <b>Saturday, October 10</b></span>
+      <a class="cta" href="#rsvp">अभी RSVP करें</a>
+      <span class="deadline">कृपया <b>शनिवार, 10 अक्टूबर</b> तक उत्तर दें</span>
     </div>
 
-    <div class="countdown" id="countdown" aria-label="Countdown to the celebration"></div>
+    <div class="countdown" id="countdown" aria-label="उत्सव की उलटी गिनती"></div>
   </section>
 
   <div class="divider" aria-hidden="true"><svg viewBox="0 0 180 20" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 10h70M110 10h70"/><path d="M90 2l8 8-8 8-8-8z" fill="currentColor" fill-opacity=".25"/><circle cx="76" cy="10" r="2" fill="currentColor"/><circle cx="104" cy="10" r="2" fill="currentColor"/></svg></div>
 
   <!-- ============ DETAILS ============ -->
   <section class="card details" aria-label="Event details">
-    <p class="kicker" style="margin:0">The Details</p>
-    <div class="row"><div class="ic">📅</div><div><b>Saturday, October 31, 2026</b><span>Celebrations begin at 12:00 noon</span></div></div>
+    <p class="kicker" style="margin:0">कार्यक्रम विवरण</p>
+    <div class="row"><div class="ic">📅</div><div><b>शनिवार, 31 अक्टूबर 2026</b><span>उत्सव दोपहर 12:00 बजे से आरंभ</span></div></div>
     <div class="row"><div class="ic">📍</div><div><b>15798 Mandrake Trail</b><span>Frisco, TX 75033</span></div></div>
-    <div class="row"><div class="ic">🏡</div><div><b>Hosted by The Jain Family</b><span>Bring the whole family — little ones are most welcome</span></div></div>
+    <div class="row"><div class="ic">🏡</div><div><b>आयोजक: जैन परिवार</b><span>पूरे परिवार सहित पधारें — बच्चों का विशेष स्वागत है</span></div></div>
     <div class="actions">
-      <a class="cta" href="#rsvp">RSVP BY OCTOBER 10 →</a>
-      <a class="btn-ghost" id="mapLink" target="_blank" rel="noopener" href="#">Get directions</a>
-      <button class="btn-ghost" id="calBtn" type="button">Add to calendar</button>
+      <a class="cta" href="#rsvp">10 अक्टूबर तक RSVP करें →</a>
+      <a class="btn-ghost" id="mapLink" target="_blank" rel="noopener" href="#">रास्ता देखें</a>
+      <button class="btn-ghost" id="calBtn" type="button">कैलेंडर में जोड़ें</button>
     </div>
   </section>
 
@@ -245,14 +272,14 @@
 
   <!-- ============ FEAST ============ -->
   <section class="card" aria-label="The feast">
-    <p class="kicker">Come Hungry</p>
-    <h2 class="foil">A Festive Feast</h2>
-    <p class="lead">An afternoon of good food, warm company and festive cheer.</p>
+    <p class="kicker">स्वाद का उत्सव</p>
+    <h2 class="foil">उत्सव भोज</h2>
+    <p class="lead">स्वादिष्ट भोजन, आत्मीय साथ और त्योहार की रौनक से भरी एक यादगार दोपहर।</p>
     <div class="feast">
-      <div><span class="e">🍛</span><b>Traditional Indian Fare</b><small>A lavish spread of festive favourites, made with love</small></div>
-      <div><span class="e">🧁</span><b>For the Little Ones</b><small>Special non-spicy treats made just for kids</small></div>
+      <div><span class="e">🍛</span><b>पारंपरिक भारतीय व्यंजन</b><small>प्रेम से बने त्योहार के मनपसंद पकवानों की भव्य दावत</small></div>
+      <div><span class="e">🧁</span><b>नन्हे मेहमानों के लिए</b><small>बच्चों के लिए खास, बिना तीखे स्वादिष्ट व्यंजन</small></div>
     </div>
-    <div class="veg"><span class="vdot" aria-hidden="true"></span> 100% vegetarian</div>
+    <div class="veg"><span class="vdot" aria-hidden="true"></span> 100% शाकाहारी</div>
   </section>
 
   <div class="divider" aria-hidden="true"><svg viewBox="0 0 180 20" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 10h70M110 10h70"/><path d="M90 2l8 8-8 8-8-8z" fill="currentColor" fill-opacity=".25"/><circle cx="76" cy="10" r="2" fill="currentColor"/><circle cx="104" cy="10" r="2" fill="currentColor"/></svg></div>
@@ -260,16 +287,16 @@
   <!-- ============ NOTE ============ -->
   <section class="card note" aria-label="A note from your hosts">
     <span class="q" aria-hidden="true">“</span>
-    <p id="note">A house becomes a home when it's filled with the people you love. We would be honoured to have you with us as we light our first diyas here.</p>
-    <small>— The Jain Family</small>
+    <p id="note">मकान तब घर बनता है, जब उसमें अपनों का साथ हो। इस नए घर में पहले दीये जलाते समय आपकी उपस्थिति हमारे लिए सौभाग्य की बात होगी।</p>
+    <small>— जैन परिवार</small>
   </section>
 
   <div class="divider" aria-hidden="true"><svg viewBox="0 0 180 20" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 10h70M110 10h70"/><path d="M90 2l8 8-8 8-8-8z" fill="currentColor" fill-opacity=".25"/><circle cx="76" cy="10" r="2" fill="currentColor"/><circle cx="104" cy="10" r="2" fill="currentColor"/></svg></div>
 
   <!-- ============ RSVP ============ -->
-  <section class="card" id="rsvp" aria-label="RSVP">
+  <section class="card" id="rsvp" aria-label="RSVP" lang="en">
     <div id="formWrap">
-      <p class="kicker">Répondez s'il vous plaît</p>
+      <p class="kicker">कृपया उत्तर दें</p>
       <h2 class="foil" id="rsvpTitle">Will you join us?</h2>
       <span class="due">Please RSVP by Saturday, October 10</span>
       <form id="form" novalidate>
@@ -314,12 +341,12 @@
   </section>
 
   <footer>
-    <div class="bye foil">Shubh Deepavali</div>
-    <small>With love · The Jain Family</small>
+    <div class="bye foil">शुभ दीपावली</div>
+    <small>सप्रेम · जैन परिवार</small>
   </footer>
 </main>
 
-<a class="cta sticky off" id="sticky" href="#rsvp">RSVP BY OCT 10</a>
+<a class="cta sticky off" id="sticky" href="#rsvp">10 अक्टूबर तक RSVP करें</a>
 
 <script>
 /* ============ CONFIG ============ */
@@ -367,9 +394,9 @@ const MAX = 20;
   const start = Date.parse("2026-10-31T12:00:00-05:00"), el = $("countdown");
   function tick(){
     const ms = start - Date.now();
-    if (ms <= 0) { el.innerHTML = '<div style="padding:10px 18px"><b style="font-size:22px">The celebration is on! 🎉</b></div>'; return; }
+    if (ms <= 0) { el.innerHTML = '<div style="padding:10px 18px"><b style="font-size:22px">उत्सव आरंभ! 🎉</b></div>'; return; }
     const d = Math.floor(ms/864e5), h = Math.floor(ms%864e5/36e5), m = Math.floor(ms%36e5/6e4);
-    el.innerHTML = [[d,"days"],[h,"hours"],[m,"mins"]].map(([n,u]) => `<div><b>${n}</b><span>${u}</span></div>`).join("");
+    el.innerHTML = [[d,"दिन"],[h,"घंटे"],[m,"मिनट"]].map(([n,u]) => `<div><b>${n}</b><span>${u}</span></div>`).join("");
   }
   tick(); setInterval(tick, 30000);
 })();
@@ -379,12 +406,12 @@ const q = new URLSearchParams(location.search);
 const guest = (q.get("name") || q.get("to") || "").trim().slice(0, 80);
 if (guest) {
   const first = guest.split(/\s+/)[0];
-  $("hello").innerHTML = "Dear <b></b>,";
+  $("hello").innerHTML = "प्रिय <b></b> जी,";
   $("hello").querySelector("b").textContent = first;
-  $("note").textContent = `${first}, a house becomes a home when it's filled with the people you love. We would be honoured to have you with us as we light our first diyas here.`;
+  $("note").textContent = `${first} जी, मकान तब घर बनता है, जब उसमें अपनों का साथ हो। इस नए घर में पहले दीये जलाते समय आपकी उपस्थिति हमारे लिए सौभाग्य की बात होगी।`;
   $("rsvpTitle").textContent = `${first}, will you join us?`;
   $("name").value = guest;
-  document.title = `${first}, you're invited · The Jain Family`;
+  document.title = `${first} जी, सादर आमंत्रण · जैन परिवार`;
 }
 
 // sticky RSVP button: only between the hero and the form, and never after an RSVP is sent
