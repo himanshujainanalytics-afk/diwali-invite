@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Housewarming & Diwali · The Jain Family</title>
+<meta name="description" content="You're invited to our Housewarming & Diwali celebration — Oct 31, 12 PM, Frisco TX.">
+<meta property="og:title" content="You're invited! Housewarming & Diwali Celebration">
+<meta property="og:description" content="Saturday, Oct 31 · 12 PM · 15798 Mandrake Trail, Frisco. RSVP with The Jain Family.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --maroon:#5a0f1e; --maroon-deep:#3a0812; --gold:#f2c14e; --gold-soft:#ffe3a3;
+    --saffron:#f28a1e; --cream:#fff6e3; --ink:#2b1a14;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; font-family:'Poppins',system-ui,sans-serif; color:var(--cream);
+    background:
+      radial-gradient(1200px 600px at 50% -10%, #8a1c33 0%, transparent 60%),
+      linear-gradient(180deg,var(--maroon) 0%, var(--maroon-deep) 100%);
+    background-attachment:fixed; min-height:100vh; overflow-x:hidden;
+  }
+  /* twinkling lights */
+  .sparkles{position:fixed; inset:0; pointer-events:none; z-index:0}
+  .sparkles i{position:absolute; width:4px; height:4px; border-radius:50%; background:var(--gold);
+    box-shadow:0 0 8px 2px rgba(242,193,78,.7); opacity:0; animation:tw 4s infinite}
+  @keyframes tw{0%,100%{opacity:0; transform:scale(.6)}50%{opacity:.9; transform:scale(1.2)}}
+
+  main{position:relative; z-index:1; max-width:640px; margin:0 auto; padding:0 16px 56px}
+  .hero{text-align:center; padding:56px 0 24px}
+  .diya{font-size:64px; filter:drop-shadow(0 0 18px rgba(242,193,78,.8)); animation:flick 3s ease-in-out infinite}
+  @keyframes flick{0%,100%{transform:scale(1)}50%{transform:scale(1.07) rotate(-2deg)}}
+  .eyebrow{letter-spacing:.35em; text-transform:uppercase; font-size:12px; color:var(--gold); margin:12px 0 8px}
+  h1{font-family:'Cormorant Garamond',serif; font-weight:700; font-size:clamp(40px,10vw,64px); line-height:1.02; margin:0; color:var(--gold-soft)}
+  h1 em{font-style:italic; color:var(--saffron); font-weight:500}
+  .sub{margin:14px auto 0; max-width:30em; font-weight:300; color:#f3dcc0}
+  .rule{display:flex; align-items:center; gap:12px; justify-content:center; margin:26px 0; color:var(--gold)}
+  .rule::before,.rule::after{content:""; height:1px; width:70px; background:linear-gradient(90deg,transparent,var(--gold))}
+  .rule::after{transform:scaleX(-1)}
+
+  .card{
+    background:linear-gradient(180deg,rgba(255,246,227,.08),rgba(255,246,227,.03));
+    border:1px solid rgba(242,193,78,.35); border-radius:20px; padding:24px;
+    backdrop-filter:blur(6px); box-shadow:0 20px 50px rgba(0,0,0,.25);
+  }
+  .details{display:grid; gap:18px}
+  .row{display:flex; gap:14px; align-items:flex-start}
+  .row .ic{font-size:22px; width:34px; text-align:center; flex:none}
+  .row b{display:block; font-weight:500; color:var(--gold-soft); font-size:18px}
+  .row span{font-weight:300; color:#f3dcc0; font-size:14px}
+  .actions{display:flex; flex-wrap:wrap; gap:10px; margin-top:20px}
+  .btn-ghost{
+    flex:1 1 140px; text-align:center; text-decoration:none; color:var(--gold-soft); font-size:13px; font-weight:500;
+    padding:11px 14px; border:1px solid rgba(242,193,78,.5); border-radius:999px; background:transparent; cursor:pointer; font-family:inherit;
+    transition:.2s;
+  }
+  .btn-ghost:hover{background:rgba(242,193,78,.15)}
+
+  h2{font-family:'Cormorant Garamond',serif; font-size:34px; margin:0 0 4px; text-align:center; color:var(--gold-soft)}
+  .lead{text-align:center; font-weight:300; margin:0 0 22px; color:#f3dcc0; font-size:14px}
+  label{display:block; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); margin:0 0 8px}
+  input[type=text]{
+    width:100%; padding:14px 16px; font:inherit; font-size:16px; color:var(--ink); background:var(--cream);
+    border:2px solid transparent; border-radius:12px; outline:none; transition:.2s;
+  }
+  input[type=text]:focus{border-color:var(--saffron); box-shadow:0 0 0 4px rgba(242,138,30,.25)}
+  .field{margin-bottom:20px}
+  .counters{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+  .counter{background:rgba(255,246,227,.08); border:1px solid rgba(242,193,78,.3); border-radius:14px; padding:14px; text-align:center}
+  .counter small{display:block; font-weight:300; font-size:11px; color:#e9cfae; margin-top:2px}
+  .stepper{display:flex; align-items:center; justify-content:center; gap:14px; margin-top:6px}
+  .stepper button{
+    width:42px; height:42px; border-radius:50%; border:1px solid var(--gold); background:transparent; color:var(--gold-soft);
+    font-size:22px; line-height:1; cursor:pointer; transition:.15s; font-family:inherit;
+  }
+  .stepper button:hover{background:var(--gold); color:var(--maroon-deep)}
+  .stepper output{font-family:'Cormorant Garamond',serif; font-size:40px; min-width:44px; color:var(--gold-soft)}
+  .total{text-align:center; font-size:13px; color:#f3dcc0; margin:16px 0 20px; font-weight:300}
+  .total b{color:var(--gold); font-weight:600}
+  .submit{
+    width:100%; padding:16px; font:inherit; font-weight:600; font-size:16px; letter-spacing:.04em; cursor:pointer;
+    color:var(--maroon-deep); border:0; border-radius:999px;
+    background:linear-gradient(135deg,var(--gold),var(--saffron)); box-shadow:0 8px 24px rgba(242,138,30,.4); transition:.2s;
+  }
+  .submit:hover{transform:translateY(-1px)}
+  .submit:disabled{opacity:.6; cursor:wait; transform:none}
+  .msg{margin-top:14px; text-align:center; font-size:14px; min-height:1.2em}
+  .msg.err{color:#ffb4a8}
+  .thanks{text-align:center; padding:12px 0}
+  .thanks .big{font-size:54px}
+  .thanks h3{font-family:'Cormorant Garamond',serif; font-size:32px; margin:6px 0; color:var(--gold-soft)}
+  .thanks p{margin:6px 0; font-weight:300; color:#f3dcc0}
+  .hidden{display:none}
+  footer{text-align:center; margin-top:36px; font-family:'Cormorant Garamond',serif; font-size:22px; color:var(--gold-soft)}
+  footer small{display:block; font-family:'Poppins'; font-size:12px; font-weight:300; color:#d9b995; margin-top:6px}
+  @media (prefers-reduced-motion:reduce){.sparkles i,.diya{animation:none}}
+</style>
+</head>
+<body>
+<div class="sparkles" id="sparkles" aria-hidden="true"></div>
+
+<main>
+  <section class="hero">
+    <div class="diya" aria-hidden="true">🪔</div>
+    <p class="eyebrow">You're invited</p>
+    <h1>Housewarming<br><em>&amp;</em> Diwali</h1>
+    <p class="sub">Join us as we light up our new home and celebrate the festival of lights with food, family and friends.</p>
+    <div class="rule" aria-hidden="true">✦</div>
+  </section>
+
+  <section class="card details" aria-label="Event details">
+    <div class="row"><div class="ic">📅</div><div><b>Saturday, October 31, 2026</b><span>Starting at 12:00 PM</span></div></div>
+    <div class="row"><div class="ic">📍</div><div><b>15798 Mandrake Trail</b><span>Frisco, TX 75033</span></div></div>
+    <div class="row"><div class="ic">🏡</div><div><b>Hosted by The Jain Family</b><span>Children are most welcome!</span></div></div>
+    <div class="actions">
+      <a class="btn-ghost" id="mapLink" target="_blank" rel="noopener" href="#">Get directions</a>
+      <button class="btn-ghost" id="calBtn" type="button">Add to calendar</button>
+    </div>
+  </section>
+
+  <div class="rule" aria-hidden="true">✦</div>
+
+  <section class="card" id="rsvp" aria-label="RSVP">
+    <div id="formWrap">
+      <h2>Kindly RSVP</h2>
+      <p class="lead">Let us know who's coming so we can plan the feast.</p>
+      <form id="form" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Priya Sharma" maxlength="80" required>
+        </div>
+        <div class="counters">
+          <div class="counter">
+            <label style="margin:0">Adults</label><small>age 13+</small>
+            <div class="stepper">
+              <button type="button" data-t="adults" data-d="-1" aria-label="Fewer adults">−</button>
+              <output id="adults" aria-live="polite">1</output>
+              <button type="button" data-t="adults" data-d="1" aria-label="More adults">+</button>
+            </div>
+          </div>
+          <div class="counter">
+            <label style="margin:0">Children</label><small>under 13</small>
+            <div class="stepper">
+              <button type="button" data-t="children" data-d="-1" aria-label="Fewer children">−</button>
+              <output id="children" aria-live="polite">0</output>
+              <button type="button" data-t="children" data-d="1" aria-label="More children">+</button>
+            </div>
+          </div>
+        </div>
+        <p class="total">Total guests: <b id="total">1</b></p>
+        <button class="submit" id="submit" type="submit">Send RSVP</button>
+        <p class="msg" id="msg" role="status"></p>
+      </form>
+    </div>
+
+    <div class="thanks hidden" id="thanks">
+      <div class="big">🎆</div>
+      <h3>Thank you, <span id="tyName"></span>!</h3>
+      <p id="tySummary"></p>
+      <p>We can't wait to celebrate with you.</p>
+      <div class="actions" style="justify-content:center">
+        <button class="btn-ghost" id="calBtn2" type="button">Add to calendar</button>
+        <button class="btn-ghost" id="again" type="button">Edit / RSVP again</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Shubh Deepavali!
+    <small>With love, The Jain Family</small>
+  </footer>
+</main>
+
+<script>
+/* ============ CONFIG ============ */
+// Paste your Google Apps Script Web App URL here (see README.md, step 1).
+const RSVP_ENDPOINT = "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+
+const EVENT = {
+  title: "Housewarming & Diwali Celebration – The Jain Family",
+  address: "15798 Mandrake Trail, Frisco, TX 75033",
+  // Oct 31 2026, 12:00 PM CDT (UTC-5) = 17:00 UTC. Ends 4 PM (edit if needed).
+  startUTC: "20261031T170000Z",
+  endUTC:   "20261031T210000Z",
+  details:  "Join The Jain Family to celebrate our housewarming and Diwali!"
+};
+/* ================================== */
+
+const $ = id => document.getElementById(id);
+const state = {adults:1, children:0};
+const MAX = 20;
+
+// sparkles
+(() => {
+  const box = $("sparkles");
+  for (let i = 0; i < 28; i++) {
+    const s = document.createElement("i");
+    s.style.left = Math.random()*100 + "%";
+    s.style.top = Math.random()*100 + "%";
+    s.style.animationDelay = (Math.random()*4) + "s";
+    s.style.animationDuration = (3 + Math.random()*3) + "s";
+    box.appendChild(s);
+  }
+})();
+
+// map link
+$("mapLink").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(EVENT.address);
+
+// steppers
+function render(){
+  $("adults").textContent = state.adults;
+  $("children").textContent = state.children;
+  $("total").textContent = state.adults + state.children;
+}
+document.querySelectorAll(".stepper button").forEach(b => b.addEventListener("click", () => {
+  const t = b.dataset.t, min = t === "adults" ? 1 : 0;
+  state[t] = Math.min(MAX, Math.max(min, state[t] + Number(b.dataset.d)));
+  render();
+}));
+
+// calendar (.ics download works on iPhone, Android, Outlook, Google)
+function addToCalendar(){
+  const ics = [
+    "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Jain Family//Housewarming//EN","BEGIN:VEVENT",
+    "UID:housewarming-diwali-2026@jainfamily",
+    "DTSTAMP:" + new Date().toISOString().replace(/[-:]|\.\d{3}/g,""),
+    "DTSTART:" + EVENT.startUTC, "DTEND:" + EVENT.endUTC,
+    "SUMMARY:" + EVENT.title,
+    "LOCATION:" + EVENT.address.replace(/,/g,"\\,"),
+    "DESCRIPTION:" + EVENT.details,
+    "END:VEVENT","END:VCALENDAR"
+  ].join("\r\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([ics], {type:"text/calendar"}));
+  a.download = "Jain-Housewarming-Diwali.ics";
+  document.body.appendChild(a); a.click(); a.remove();
+}
+$("calBtn").onclick = $("calBtn2").onclick = addToCalendar;
+
+// submit
+$("form").addEventListener("submit", async e => {
+  e.preventDefault();
+  const msg = $("msg"), btn = $("submit"), name = $("name").value.trim();
+  msg.className = "msg"; msg.textContent = "";
+  if (!name) { msg.className = "msg err"; msg.textContent = "Please enter your name."; $("name").focus(); return; }
+  if (RSVP_ENDPOINT.startsWith("PASTE_")) { msg.className = "msg err"; msg.textContent = "RSVP isn't connected yet — see README step 1."; return; }
+
+  btn.disabled = true; btn.textContent = "Sending…";
+  const body = new URLSearchParams({name, adults: state.adults, children: state.children});
+  try {
+    // Apps Script doesn't send CORS headers, so use no-cors (response is opaque; a resolved fetch means it was sent).
+    await fetch(RSVP_ENDPOINT, {method:"POST", mode:"no-cors", body});
+    try { localStorage.setItem("rsvp", JSON.stringify({name, ...state})); } catch {}
+    showThanks(name);
+  } catch {
+    msg.className = "msg err"; msg.textContent = "Couldn't send — please check your connection and try again.";
+  } finally {
+    btn.disabled = false; btn.textContent = "Send RSVP";
+  }
+});
+
+function showThanks(name){
+  $("tyName").textContent = name;
+  const a = state.adults, c = state.children;
+  $("tySummary").textContent = `We've saved ${a} adult${a>1?"s":""}` + (c ? ` and ${c} child${c>1?"ren":""}` : "") + ".";
+  $("formWrap").classList.add("hidden"); $("thanks").classList.remove("hidden");
+  $("rsvp").scrollIntoView({behavior:"smooth", block:"center"});
+}
+$("again").onclick = () => { $("thanks").classList.add("hidden"); $("formWrap").classList.remove("hidden"); };
+
+// prefill from a personalised link, e.g. ?name=Priya%20Sharma
+const q = new URLSearchParams(location.search);
+if (q.get("name")) $("name").value = q.get("name");
+render();
+</script>
+</body>
+</html>
