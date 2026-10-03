@@ -4,156 +4,186 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Housewarming & Diwali · The Jain Family</title>
-<meta name="description" content="Join us for a Housewarming & Diwali feast — Oct 31, 12 PM, Frisco TX. From Kachori to Dal Baati, an all-vegetarian menu. RSVP with The Jain Family.">
-<meta property="og:title" content="You're invited! Housewarming & Diwali Feast 🪔">
-<meta property="og:description" content="Saturday, Oct 31 · 12 PM · Frisco, TX. Kachori to Dal Baati — an all-vegetarian feast. RSVP with The Jain Family.">
+<meta name="description" content="The Jain Family invites you to a Housewarming & Diwali Celebration — Saturday, Oct 31, 12 noon, Frisco TX. Kindly RSVP by October 10.">
+<meta property="og:title" content="You're invited — A Housewarming & Diwali Celebration 🪔">
+<meta property="og:description" content="Saturday, October 31 · 12 noon · Frisco, TX. Kindly RSVP by October 10. — The Jain Family">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪔</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --maroon:#5a0f1e; --maroon-deep:#3a0812; --gold:#f2c14e; --gold-soft:#ffe3a3;
-    --saffron:#f28a1e; --cream:#fff6e3; --ink:#2b1a14; --leaf:#5fbf6a;
+    --night:#1a0710; --plum:#3b0b1c; --wine:#5e1228; --gold:#e6b85c; --gold-hi:#fbe3a6; --gold-lo:#a87a2c;
+    --saffron:#f2902a; --ivory:#fdf4e3; --muted:#e6cfae; --ink:#2a1610; --leaf:#6cc37a;
+    --foil:linear-gradient(90deg,#c79a45 0%,#f6d58b 20%,#fff1c9 32%,#e6b85c 50%,#f6d58b 75%,#c79a45 100%);
   }
-  *{box-sizing:border-box}
+  *{box-sizing:border-box; font-variant-numeric:lining-nums}
   html{scroll-behavior:smooth}
   body{
-    margin:0; font-family:'Poppins',system-ui,sans-serif; color:var(--cream);
+    margin:0; font-family:'Jost',system-ui,sans-serif; color:var(--ivory); font-weight:300;
     background:
-      radial-gradient(900px 500px at 50% -5%, #a3243c 0%, transparent 62%),
-      radial-gradient(700px 400px at 100% 60%, rgba(242,138,30,.12), transparent 60%),
-      linear-gradient(180deg,var(--maroon) 0%, var(--maroon-deep) 100%);
+      radial-gradient(1000px 620px at 50% -8%, #8c1d3a 0%, transparent 60%),
+      radial-gradient(600px 420px at 0% 55%, rgba(242,144,42,.10), transparent 70%),
+      radial-gradient(600px 420px at 100% 85%, rgba(230,184,92,.10), transparent 70%),
+      linear-gradient(180deg,var(--plum) 0%, var(--night) 100%);
     background-attachment:fixed; min-height:100vh; overflow-x:hidden;
   }
+  .foil{background:var(--foil); background-size:200% 100%; -webkit-background-clip:text; background-clip:text; color:transparent; animation:sheen 8s linear infinite}
+  @keyframes sheen{to{background-position:200% 0}}
 
-  /* string lights across the top */
-  .lights{position:relative; z-index:2; height:46px; display:flex; justify-content:space-between; padding:0 6px;
-    border-bottom:0; overflow:hidden}
-  .lights::before{content:""; position:absolute; left:-5%; right:-5%; top:-14px; height:30px; border-bottom:2px solid rgba(242,193,78,.5); border-radius:50%}
-  .lights i{position:relative; top:12px; width:10px; height:14px; border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
-    background:var(--gold); box-shadow:0 0 12px 3px rgba(242,193,78,.8); animation:glow 2.4s ease-in-out infinite}
-  .lights i:nth-child(3n){background:var(--saffron); box-shadow:0 0 12px 3px rgba(242,138,30,.8); animation-delay:.6s}
-  .lights i:nth-child(3n+1){background:#ff7a8a; box-shadow:0 0 12px 3px rgba(255,122,138,.7); animation-delay:1.2s}
+  /* string lights */
+  .lights{position:relative; z-index:3; height:44px; display:flex; justify-content:space-between; padding:0 6px; overflow:hidden}
+  .lights::before{content:""; position:absolute; left:-5%; right:-5%; top:-16px; height:30px; border-bottom:1.5px solid rgba(230,184,92,.55); border-radius:50%}
+  .lights i{position:relative; top:12px; width:9px; height:13px; border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+    background:var(--gold-hi); box-shadow:0 0 12px 3px rgba(246,213,139,.85); animation:glow 2.6s ease-in-out infinite}
+  .lights i:nth-child(3n){background:var(--saffron); box-shadow:0 0 12px 3px rgba(242,144,42,.8)}
+  .lights i:nth-child(4n+1){background:#ff8fa0; box-shadow:0 0 12px 3px rgba(255,143,160,.7)}
   @keyframes glow{0%,100%{opacity:.45}50%{opacity:1}}
 
   .sparkles{position:fixed; inset:0; pointer-events:none; z-index:0}
-  .sparkles i{position:absolute; width:4px; height:4px; border-radius:50%; background:var(--gold);
-    box-shadow:0 0 8px 2px rgba(242,193,78,.7); opacity:0; animation:tw 4s infinite}
-  @keyframes tw{0%,100%{opacity:0; transform:scale(.6)}50%{opacity:.9; transform:scale(1.2)}}
+  .sparkles i{position:absolute; width:3px; height:3px; border-radius:50%; background:var(--gold-hi);
+    box-shadow:0 0 8px 2px rgba(246,213,139,.7); opacity:0; animation:tw 4s infinite}
+  @keyframes tw{0%,100%{opacity:0; transform:scale(.6)}50%{opacity:.9; transform:scale(1.3)}}
 
-  main{position:relative; z-index:1; max-width:680px; margin:0 auto; padding:0 16px 56px}
+  main{position:relative; z-index:1; max-width:720px; margin:0 auto; padding:0 16px 120px}
 
-  /* ---------- hero ---------- */
-  .hero{text-align:center; padding:34px 0 20px}
-  .hello{display:inline-block; font-family:'Cormorant Garamond',serif; font-style:italic; font-weight:700;
-    font-size:clamp(26px,6.5vw,36px); color:var(--saffron); margin:0 0 6px}
-  .hello b{color:var(--gold); font-weight:700}
-  .diya{font-size:60px; filter:drop-shadow(0 0 20px rgba(242,193,78,.9)); animation:flick 3s ease-in-out infinite}
-  @keyframes flick{0%,100%{transform:scale(1)}50%{transform:scale(1.08) rotate(-2deg)}}
-  .eyebrow{letter-spacing:.32em; text-transform:uppercase; font-size:11px; color:var(--gold); margin:10px 0 8px}
-  h1{font-family:'Cormorant Garamond',serif; font-weight:700; font-size:clamp(42px,11vw,68px); line-height:1; margin:0; color:var(--gold-soft)}
-  h1 em{font-style:italic; color:var(--saffron); font-weight:500}
-  .sub{margin:16px auto 0; max-width:31em; font-weight:300; color:#f6e3c8; font-size:15px; line-height:1.65}
-  .sub strong{color:var(--gold-soft); font-weight:500}
-  .pills{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:18px}
-  .pill{font-size:12px; padding:7px 14px; border-radius:999px; border:1px solid rgba(242,193,78,.5); color:var(--gold-soft); background:rgba(255,246,227,.05)}
-  .pill.veg{border-color:rgba(95,191,106,.7); color:#c9f3cd; background:rgba(95,191,106,.12)}
+  /* ---------- invitation hero ---------- */
+  .invite{
+    position:relative; margin-top:18px; padding:42px 26px 40px; text-align:center; border-radius:6px;
+    background:linear-gradient(180deg,rgba(94,18,40,.55),rgba(26,7,16,.55));
+    box-shadow:0 30px 80px rgba(0,0,0,.45), inset 0 0 0 1px rgba(230,184,92,.55), inset 0 0 0 8px rgba(26,7,16,.35), inset 0 0 0 9px rgba(230,184,92,.35);
+  }
+  .invite .corner{position:absolute; width:46px; height:46px; color:var(--gold)}
+  .invite .corner.tl{top:12px; left:12px} .invite .corner.tr{top:12px; right:12px; transform:scaleX(-1)}
+  .invite .corner.bl{bottom:12px; left:12px; transform:scaleY(-1)} .invite .corner.br{bottom:12px; right:12px; transform:scale(-1,-1)}
+  .hello{font-family:'Cormorant Garamond',serif; font-style:italic; font-weight:600; font-size:clamp(24px,6vw,32px); margin:0; color:var(--saffron)}
+  .hello b{font-weight:600; color:var(--gold-hi)}
+  .mandala{position:relative; width:180px; height:180px; margin:10px auto 4px; display:grid; place-items:center}
+  .mandala svg{position:absolute; inset:0; width:100%; height:100%; animation:spin 90s linear infinite; opacity:.9}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .mandala .diya{position:relative; font-size:58px; filter:drop-shadow(0 0 22px rgba(246,213,139,.95)); animation:flick 3s ease-in-out infinite}
+  @keyframes flick{0%,100%{transform:scale(1)}50%{transform:scale(1.07) rotate(-2deg)}}
+  .presents{font-family:'Cinzel',serif; letter-spacing:.28em; font-size:12px; color:var(--gold); margin:6px 0 14px; text-transform:uppercase}
+  h1{font-family:'Cormorant Garamond',serif; font-weight:700; font-size:clamp(40px,10.5vw,70px); line-height:.98; margin:0}
+  h1 .amp{font-style:italic; font-weight:500; color:var(--saffron); -webkit-text-fill-color:var(--saffron)}
+  .tag{font-family:'Cinzel',serif; font-size:clamp(13px,3.4vw,16px); letter-spacing:.32em; text-transform:uppercase; color:var(--gold-hi); margin:16px 0 0}
+  .flourish{display:flex; align-items:center; justify-content:center; gap:12px; margin:22px auto; color:var(--gold)}
+  .flourish::before,.flourish::after{content:""; height:1px; width:80px; background:linear-gradient(90deg,transparent,var(--gold))}
+  .flourish::after{transform:scaleX(-1)}
+  .when{font-family:'Cinzel',serif; letter-spacing:.14em; line-height:1.9; color:var(--ivory); font-size:clamp(13px,3.6vw,16px)}
+  .when b{display:block; font-size:clamp(20px,5.4vw,26px); letter-spacing:.08em; color:var(--gold-hi); font-weight:600}
+  .sub{margin:20px auto 0; max-width:30em; color:var(--muted); font-size:15.5px; line-height:1.75}
+  .sub strong{color:var(--gold-hi); font-weight:500}
 
-  .countdown{display:flex; justify-content:center; gap:10px; margin:22px 0 4px}
-  .countdown div{min-width:68px; padding:10px 6px; border-radius:14px; border:1px solid rgba(242,193,78,.35); background:rgba(0,0,0,.18)}
-  .countdown b{display:block; font-family:'Cormorant Garamond',serif; font-size:30px; color:var(--gold-soft); line-height:1}
-  .countdown span{font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:#e9cfae}
+  .cta{display:inline-flex; align-items:center; justify-content:center; gap:10px; text-decoration:none; cursor:pointer; border:0;
+    font-family:'Cinzel',serif; font-weight:700; letter-spacing:.14em; font-size:14px; color:var(--night);
+    padding:16px 30px; border-radius:999px; background:var(--foil); background-size:200% 100%; animation:sheen 6s linear infinite;
+    box-shadow:0 10px 30px rgba(230,184,92,.35), 0 0 0 1px rgba(255,241,201,.6) inset; transition:transform .2s}
+  .cta:hover{transform:translateY(-2px)}
+  .cta-wrap{margin-top:26px}
+  .deadline{display:block; margin-top:10px; font-size:12.5px; letter-spacing:.06em; color:var(--muted)}
+  .deadline b{color:var(--gold-hi); font-weight:500}
 
-  .rule{display:flex; align-items:center; gap:12px; justify-content:center; margin:30px 0; color:var(--gold)}
-  .rule::before,.rule::after{content:""; height:1px; width:70px; background:linear-gradient(90deg,transparent,var(--gold))}
-  .rule::after{transform:scaleX(-1)}
+  .countdown{display:flex; justify-content:center; gap:10px; margin:26px 0 0}
+  .countdown div{min-width:70px; padding:10px 6px; border-radius:6px; border:1px solid rgba(230,184,92,.35); background:rgba(0,0,0,.22)}
+  .countdown b{display:block; font-family:'Cormorant Garamond',serif; font-size:30px; color:var(--gold-hi); line-height:1; font-weight:600}
+  .countdown span{font-family:'Cinzel',serif; font-size:9.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted)}
 
+  .divider{display:flex; align-items:center; justify-content:center; margin:34px 0; color:var(--gold); opacity:.9}
+  .divider svg{width:180px; height:20px}
+
+  /* ---------- cards ---------- */
   .card{
-    background:linear-gradient(180deg,rgba(255,246,227,.09),rgba(255,246,227,.03));
-    border:1px solid rgba(242,193,78,.35); border-radius:22px; padding:24px;
-    backdrop-filter:blur(6px); box-shadow:0 20px 50px rgba(0,0,0,.25);
+    position:relative; background:linear-gradient(180deg,rgba(253,244,227,.08),rgba(253,244,227,.025));
+    border:1px solid rgba(230,184,92,.38); border-radius:18px; padding:28px 24px;
+    backdrop-filter:blur(6px); box-shadow:0 24px 60px rgba(0,0,0,.3);
   }
-  h2{font-family:'Cormorant Garamond',serif; font-size:36px; margin:0 0 4px; text-align:center; color:var(--gold-soft); line-height:1.1}
-  .lead{text-align:center; font-weight:300; margin:0 0 22px; color:#f3dcc0; font-size:14px}
+  .kicker{font-family:'Cinzel',serif; text-align:center; letter-spacing:.3em; font-size:11px; color:var(--gold); margin:0 0 6px; text-transform:uppercase}
+  h2{font-family:'Cormorant Garamond',serif; font-size:clamp(32px,8vw,40px); margin:0 0 6px; text-align:center; line-height:1.08; font-weight:700}
+  .lead{text-align:center; margin:0 auto 22px; color:var(--muted); font-size:14.5px; max-width:32em; line-height:1.65}
 
-  /* ---------- details ---------- */
-  .details{display:grid; gap:18px}
-  .row{display:flex; gap:14px; align-items:flex-start}
-  .row .ic{font-size:22px; width:34px; text-align:center; flex:none}
-  .row b{display:block; font-weight:500; color:var(--gold-soft); font-size:18px}
-  .row span{font-weight:300; color:#f3dcc0; font-size:14px}
-  .actions{display:flex; flex-wrap:wrap; gap:10px; margin-top:20px}
+  /* details */
+  .details{display:grid; gap:20px}
+  .row{display:flex; gap:16px; align-items:flex-start}
+  .row .ic{flex:none; width:42px; height:42px; border-radius:50%; display:grid; place-items:center; font-size:19px;
+    border:1px solid rgba(230,184,92,.45); background:rgba(230,184,92,.08)}
+  .row b{display:block; font-weight:500; color:var(--gold-hi); font-size:17.5px}
+  .row span{color:var(--muted); font-size:14px}
+  .actions{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px}
+  .actions .cta{flex:1 1 100%; padding:15px 20px}
   .btn-ghost{
-    flex:1 1 140px; text-align:center; text-decoration:none; color:var(--gold-soft); font-size:13px; font-weight:500;
-    padding:11px 14px; border:1px solid rgba(242,193,78,.5); border-radius:999px; background:transparent; cursor:pointer; font-family:inherit; transition:.2s;
+    flex:1 1 150px; text-align:center; text-decoration:none; color:var(--gold-hi); font-size:13px; font-weight:500; letter-spacing:.04em;
+    padding:12px 14px; border:1px solid rgba(230,184,92,.55); border-radius:999px; background:transparent; cursor:pointer; font-family:inherit; transition:.2s;
   }
-  .btn-ghost:hover{background:rgba(242,193,78,.15)}
+  .btn-ghost:hover{background:rgba(230,184,92,.14)}
 
-  /* ---------- menu ---------- */
-  .veg-badge{display:flex; align-items:center; justify-content:center; gap:10px; margin:0 auto 18px; width:fit-content;
-    padding:8px 16px; border-radius:999px; background:rgba(95,191,106,.14); border:1px solid rgba(95,191,106,.6); color:#c9f3cd; font-size:13px; font-weight:500}
-  .vdot{width:16px; height:16px; border:2px solid var(--leaf); display:inline-grid; place-items:center; border-radius:3px; flex:none}
-  .vdot::after{content:""; width:8px; height:8px; border-radius:50%; background:var(--leaf)}
-  .menu-group{margin-top:22px}
-  .menu-group h3{font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); margin:0 0 10px; display:flex; align-items:center; gap:10px}
-  .menu-group h3::after{content:""; flex:1; height:1px; background:linear-gradient(90deg,rgba(242,193,78,.5),transparent)}
-  .dishes{display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:10px}
-  .dish{display:flex; gap:12px; align-items:center; padding:12px 14px; border-radius:14px;
-    background:rgba(255,246,227,.07); border:1px solid rgba(242,193,78,.22); transition:.2s}
-  .dish:hover{transform:translateY(-2px); border-color:rgba(242,193,78,.6); background:rgba(255,246,227,.11)}
-  .dish .e{font-size:28px; flex:none}
-  .dish b{display:block; font-weight:500; color:var(--gold-soft); font-size:15px; line-height:1.2}
-  .dish small{font-weight:300; color:#e9cfae; font-size:12px}
-  .dish.star{grid-column:1/-1; background:linear-gradient(135deg,rgba(242,193,78,.2),rgba(242,138,30,.12)); border-color:rgba(242,193,78,.7)}
-  .dish.star b{font-family:'Cormorant Garamond',serif; font-size:24px; font-weight:700}
-  .dish.star .e{font-size:36px}
-  .menu-note{text-align:center; font-size:12px; font-weight:300; color:#d9b995; margin:18px 0 0}
+  /* feast */
+  .feast{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  .feast div{padding:20px 16px; border-radius:14px; text-align:center; border:1px solid rgba(230,184,92,.28); background:rgba(253,244,227,.05)}
+  .feast .e{font-size:34px; display:block; margin-bottom:6px}
+  .feast b{display:block; font-family:'Cormorant Garamond',serif; font-size:22px; color:var(--gold-hi); font-weight:700; line-height:1.15}
+  .feast small{display:block; margin-top:6px; color:var(--muted); font-size:13px; line-height:1.5}
+  .veg{display:flex; align-items:center; justify-content:center; gap:10px; margin:18px auto 0; width:fit-content;
+    padding:8px 16px; border-radius:999px; background:rgba(108,195,122,.12); border:1px solid rgba(108,195,122,.55); color:#cdf2d2; font-size:13px; font-weight:400}
+  .vdot{width:15px; height:15px; border:2px solid var(--leaf); display:inline-grid; place-items:center; border-radius:3px; flex:none}
+  .vdot::after{content:""; width:7px; height:7px; border-radius:50%; background:var(--leaf)}
 
-  /* ---------- note from hosts ---------- */
-  .note{text-align:center}
-  .note p{font-family:'Cormorant Garamond',serif; font-size:22px; line-height:1.5; margin:0; color:var(--gold-soft)}
-  .note small{display:block; margin-top:12px; font-size:13px; font-weight:300; color:#e9cfae; letter-spacing:.05em}
+  /* host note */
+  .note{text-align:center; padding:34px 26px}
+  .note .q{font-family:'Cormorant Garamond',serif; font-size:70px; line-height:.5; color:var(--gold); opacity:.6; display:block; margin-bottom:6px}
+  .note p{font-family:'Cormorant Garamond',serif; font-style:italic; font-size:clamp(20px,5vw,24px); line-height:1.5; margin:0; color:var(--ivory)}
+  .note small{display:block; margin-top:16px; font-family:'Cinzel',serif; font-size:12px; letter-spacing:.24em; color:var(--gold)}
 
-  /* ---------- form ---------- */
-  label{display:block; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); margin:0 0 8px}
+  /* form */
+  #rsvp{scroll-margin-top:16px; border-color:rgba(230,184,92,.7); box-shadow:0 0 0 1px rgba(230,184,92,.25), 0 30px 80px rgba(0,0,0,.4), 0 0 60px rgba(230,184,92,.08)}
+  .due{display:block; width:fit-content; margin:14px auto 24px; padding:7px 16px; border-radius:999px; font-size:12.5px; letter-spacing:.08em;
+    color:var(--night); background:var(--gold-hi); font-weight:600}
+  label{display:block; font-family:'Cinzel',serif; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin:0 0 8px}
   input[type=text]{
-    width:100%; padding:14px 16px; font:inherit; font-size:16px; color:var(--ink); background:var(--cream);
+    width:100%; padding:15px 16px; font:inherit; font-weight:400; font-size:16px; color:var(--ink); background:var(--ivory);
     border:2px solid transparent; border-radius:12px; outline:none; transition:.2s;
   }
-  input[type=text]:focus{border-color:var(--saffron); box-shadow:0 0 0 4px rgba(242,138,30,.25)}
+  input[type=text]:focus{border-color:var(--saffron); box-shadow:0 0 0 4px rgba(242,144,42,.25)}
   .field{margin-bottom:20px}
   .counters{display:grid; grid-template-columns:1fr 1fr; gap:14px}
-  .counter{background:rgba(255,246,227,.08); border:1px solid rgba(242,193,78,.3); border-radius:14px; padding:14px; text-align:center}
-  .counter small{display:block; font-weight:300; font-size:11px; color:#e9cfae; margin-top:2px}
+  .counter{background:rgba(253,244,227,.06); border:1px solid rgba(230,184,92,.3); border-radius:14px; padding:14px; text-align:center}
+  .counter small{display:block; font-size:11px; color:var(--muted); margin-top:2px}
   .stepper{display:flex; align-items:center; justify-content:center; gap:14px; margin-top:6px}
   .stepper button{
-    width:42px; height:42px; border-radius:50%; border:1px solid var(--gold); background:transparent; color:var(--gold-soft);
+    width:42px; height:42px; border-radius:50%; border:1px solid var(--gold); background:transparent; color:var(--gold-hi);
     font-size:22px; line-height:1; cursor:pointer; transition:.15s; font-family:inherit;
   }
-  .stepper button:hover{background:var(--gold); color:var(--maroon-deep)}
-  .stepper output{font-family:'Cormorant Garamond',serif; font-size:40px; min-width:44px; color:var(--gold-soft)}
-  .total{text-align:center; font-size:13px; color:#f3dcc0; margin:16px 0 20px; font-weight:300}
-  .total b{color:var(--gold); font-weight:600}
-  .submit{
-    width:100%; padding:16px; font:inherit; font-weight:600; font-size:16px; letter-spacing:.04em; cursor:pointer;
-    color:var(--maroon-deep); border:0; border-radius:999px;
-    background:linear-gradient(135deg,var(--gold),var(--saffron)); box-shadow:0 8px 24px rgba(242,138,30,.4); transition:.2s;
-  }
-  .submit:hover{transform:translateY(-1px)}
+  .stepper button:hover{background:var(--gold); color:var(--night)}
+  .stepper output{font-family:'Cormorant Garamond',serif; font-size:42px; min-width:44px; color:var(--gold-hi); font-weight:600}
+  .total{text-align:center; font-size:13.5px; color:var(--muted); margin:16px 0 20px}
+  .total b{color:var(--gold-hi); font-weight:600}
+  .submit{width:100%}
   .submit:disabled{opacity:.6; cursor:wait; transform:none}
   .msg{margin-top:14px; text-align:center; font-size:14px; min-height:1.2em}
   .msg.err{color:#ffb4a8}
-  .thanks{text-align:center; padding:12px 0}
-  .thanks .big{font-size:54px}
-  .thanks h3{font-family:'Cormorant Garamond',serif; font-size:34px; margin:6px 0; color:var(--gold-soft)}
-  .thanks p{margin:6px 0; font-weight:300; color:#f3dcc0}
+  .thanks{text-align:center; padding:8px 0}
+  .thanks .big{font-size:56px}
+  .thanks h3{font-family:'Cormorant Garamond',serif; font-size:36px; margin:6px 0; color:var(--gold-hi); font-weight:700}
+  .thanks p{margin:6px 0; color:var(--muted)}
+
+  footer{text-align:center; margin-top:46px}
+  footer .bye{font-family:'Cormorant Garamond',serif; font-size:34px; font-weight:700}
+  footer small{display:block; font-family:'Cinzel',serif; font-size:11px; letter-spacing:.26em; color:var(--muted); margin-top:8px; text-transform:uppercase}
+
+  /* sticky RSVP bar */
+  .sticky{position:fixed; left:50%; bottom:16px; z-index:10; transform:translate(-50%,0); transition:transform .35s, opacity .35s;
+    padding:13px 26px; font-size:13px; white-space:nowrap; box-shadow:0 12px 34px rgba(0,0,0,.5), 0 0 0 1px rgba(255,241,201,.6) inset}
+  .sticky.off{transform:translate(-50%,140%); opacity:0; pointer-events:none}
+
   .hidden{display:none}
-  footer{text-align:center; margin-top:38px; font-family:'Cormorant Garamond',serif; font-size:26px; color:var(--gold-soft)}
-  footer small{display:block; font-family:'Poppins'; font-size:12px; font-weight:300; color:#d9b995; margin-top:6px}
-  @media (max-width:420px){.countdown div{min-width:60px}}
-  @media (prefers-reduced-motion:reduce){.sparkles i,.diya,.lights i{animation:none}}
+  @media (max-width:480px){
+    .invite{padding:38px 18px 34px}
+    .invite .corner{width:34px; height:34px}
+    .feast{grid-template-columns:1fr}
+    .countdown div{min-width:62px}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 </head>
 <body>
@@ -161,89 +191,87 @@
 <div class="sparkles" id="sparkles" aria-hidden="true"></div>
 
 <main>
-  <section class="hero">
+  <!-- ============ INVITATION ============ -->
+  <section class="invite" aria-label="Invitation">
+    <svg class="corner tl" viewBox="0 0 46 46" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 44V14C2 7 7 2 14 2h30"/><path d="M8 44V18c0-6 4-10 10-10h26"/><circle cx="14" cy="14" r="3" fill="currentColor"/></svg>
+    <svg class="corner tr" viewBox="0 0 46 46" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 44V14C2 7 7 2 14 2h30"/><path d="M8 44V18c0-6 4-10 10-10h26"/><circle cx="14" cy="14" r="3" fill="currentColor"/></svg>
+    <svg class="corner bl" viewBox="0 0 46 46" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 44V14C2 7 7 2 14 2h30"/><path d="M8 44V18c0-6 4-10 10-10h26"/><circle cx="14" cy="14" r="3" fill="currentColor"/></svg>
+    <svg class="corner br" viewBox="0 0 46 46" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 44V14C2 7 7 2 14 2h30"/><path d="M8 44V18c0-6 4-10 10-10h26"/><circle cx="14" cy="14" r="3" fill="currentColor"/></svg>
+
     <p class="hello" id="hello">Dear friends &amp; family,</p>
-    <div class="diya" aria-hidden="true">🪔</div>
-    <p class="eyebrow">You're invited to our</p>
-    <h1>Housewarming<br><em>&amp;</em> Diwali Feast</h1>
-    <p class="sub" id="sub">
-      We've moved into our new home, and there's no better way to light it up than with the people we love.
-      Come celebrate <strong>Diwali</strong> and our <strong>housewarming</strong> with us — good company, festive vibes
-      and a table full of homemade favourites.
-    </p>
-    <div class="pills">
-      <span class="pill">📅 Sat, Oct 31 · 12 PM</span>
-      <span class="pill">📍 Frisco, TX</span>
-      <span class="pill veg">🌱 100% Vegetarian</span>
-      <span class="pill">👨‍👩‍👧 Kids welcome</span>
+    <div class="mandala" aria-hidden="true"><svg id="mandala" viewBox="-100 -100 200 200"></svg><span class="diya">🪔</span></div>
+    <p class="presents">The Jain Family requests the pleasure of your company</p>
+    <h1 class="foil">Housewarming<br><span class="amp">&amp;</span> Diwali</h1>
+    <p class="tag">A Celebration of Light &amp; New Beginnings</p>
+
+    <div class="flourish" aria-hidden="true">✦</div>
+
+    <div class="when">
+      <b>Saturday · October 31, 2026</b>
+      From Twelve Noon<br>
+      15798 Mandrake Trail · Frisco, Texas
     </div>
-    <div class="countdown" id="countdown" aria-label="Countdown to the party"></div>
-    <div class="rule" aria-hidden="true">✦</div>
+
+    <p class="sub" id="sub">
+      A new home, a festival of lights, and the people we love most — under one roof.
+      Join us as we open our doors for the very first time, light the diyas together,
+      and celebrate <strong>Diwali</strong> the way it's meant to be: with family, friends and a grand festive feast.
+    </p>
+
+    <div class="cta-wrap">
+      <a class="cta" href="#rsvp">RSVP NOW</a>
+      <span class="deadline">Kindly respond by <b>Saturday, October 10</b></span>
+    </div>
+
+    <div class="countdown" id="countdown" aria-label="Countdown to the celebration"></div>
   </section>
 
-  <!-- DETAILS -->
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 180 20" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 10h70M110 10h70"/><path d="M90 2l8 8-8 8-8-8z" fill="currentColor" fill-opacity=".25"/><circle cx="76" cy="10" r="2" fill="currentColor"/><circle cx="104" cy="10" r="2" fill="currentColor"/></svg></div>
+
+  <!-- ============ DETAILS ============ -->
   <section class="card details" aria-label="Event details">
-    <div class="row"><div class="ic">📅</div><div><b>Saturday, October 31, 2026</b><span>Doors open at 12:00 PM — come hungry!</span></div></div>
+    <p class="kicker" style="margin:0">The Details</p>
+    <div class="row"><div class="ic">📅</div><div><b>Saturday, October 31, 2026</b><span>Celebrations begin at 12:00 noon</span></div></div>
     <div class="row"><div class="ic">📍</div><div><b>15798 Mandrake Trail</b><span>Frisco, TX 75033</span></div></div>
-    <div class="row"><div class="ic">🏡</div><div><b>Hosted by The Jain Family</b><span>Bring the whole family — children are most welcome!</span></div></div>
+    <div class="row"><div class="ic">🏡</div><div><b>Hosted by The Jain Family</b><span>Bring the whole family — little ones are most welcome</span></div></div>
     <div class="actions">
+      <a class="cta" href="#rsvp">RSVP BY OCTOBER 10 →</a>
       <a class="btn-ghost" id="mapLink" target="_blank" rel="noopener" href="#">Get directions</a>
       <button class="btn-ghost" id="calBtn" type="button">Add to calendar</button>
     </div>
   </section>
 
-  <div class="rule" aria-hidden="true">✦</div>
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 180 20" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 10h70M110 10h70"/><path d="M90 2l8 8-8 8-8-8z" fill="currentColor" fill-opacity=".25"/><circle cx="76" cy="10" r="2" fill="currentColor"/><circle cx="104" cy="10" r="2" fill="currentColor"/></svg></div>
 
-  <!-- MENU -->
-  <section class="card" aria-label="Menu">
-    <h2>The Feast</h2>
-    <p class="lead">From crispy Kachori to Dal Baati — a spread made to be shared.</p>
-    <div class="veg-badge"><span class="vdot" aria-hidden="true"></span> Pure vegetarian menu, start to finish</div>
-
-    <div class="menu-group">
-      <h3>Chaat &amp; Starters</h3>
-      <div class="dishes">
-        <div class="dish star"><span class="e">🥟</span><div><b>Kachori</b><small>Flaky, golden &amp; piping hot — with chutneys</small></div></div>
-        <div class="dish"><span class="e">🔺</span><div><b>Samosa</b><small>Crisp, spiced potato &amp; peas</small></div></div>
-        <div class="dish"><span class="e">🥗</span><div><b>Dahi Vada</b><small>Soft, tangy &amp; cool</small></div></div>
-      </div>
+  <!-- ============ FEAST ============ -->
+  <section class="card" aria-label="The feast">
+    <p class="kicker">Come Hungry</p>
+    <h2 class="foil">A Festive Feast</h2>
+    <p class="lead">An afternoon of good food, warm company and festive cheer.</p>
+    <div class="feast">
+      <div><span class="e">🍛</span><b>Traditional Indian Fare</b><small>A lavish spread of festive favourites, made with love</small></div>
+      <div><span class="e">🧁</span><b>For the Little Ones</b><small>Special non-spicy treats made just for kids</small></div>
     </div>
-
-    <div class="menu-group">
-      <h3>The Main Event</h3>
-      <div class="dishes">
-        <div class="dish star"><span class="e">🍲</span><div><b>Dal Baati Churma</b><small>Baked baatis, ghee-soaked, with five-lentil dal &amp; sweet churma</small></div></div>
-        <div class="dish"><span class="e">🍛</span><div><b>Seasonal Sabzi</b><small>Home-style veg curry</small></div></div>
-        <div class="dish"><span class="e">🍚</span><div><b>Jeera Rice &amp; Rotis</b><small>Fresh &amp; fluffy</small></div></div>
-      </div>
-    </div>
-
-    <div class="menu-group">
-      <h3>Sweet Endings</h3>
-      <div class="dishes">
-        <div class="dish"><span class="e">🍩</span><div><b>Jalebi</b><small>Hot, crisp &amp; syrupy</small></div></div>
-        <div class="dish"><span class="e">🟤</span><div><b>Gulab Jamun</b><small>Soft &amp; saffron-sweet</small></div></div>
-        <div class="dish"><span class="e">🍬</span><div><b>Diwali Mithai</b><small>A festive box of sweets</small></div></div>
-      </div>
-    </div>
-    <p class="menu-note">Have a dietary need? Let us know when you RSVP and we'll take care of you.</p>
+    <div class="veg"><span class="vdot" aria-hidden="true"></span> 100% vegetarian</div>
   </section>
 
-  <div class="rule" aria-hidden="true">✦</div>
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 180 20" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 10h70M110 10h70"/><path d="M90 2l8 8-8 8-8-8z" fill="currentColor" fill-opacity=".25"/><circle cx="76" cy="10" r="2" fill="currentColor"/><circle cx="104" cy="10" r="2" fill="currentColor"/></svg></div>
 
-  <!-- HOST NOTE -->
+  <!-- ============ NOTE ============ -->
   <section class="card note" aria-label="A note from your hosts">
-    <p id="note">“Your presence is the best gift we could ask for. Come share a plate, a laugh and a diya with us.”</p>
+    <span class="q" aria-hidden="true">“</span>
+    <p id="note">A house becomes a home when it's filled with the people you love. We would be honoured to have you with us as we light our first diyas here.</p>
     <small>— The Jain Family</small>
   </section>
 
-  <div class="rule" aria-hidden="true">✦</div>
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 180 20" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 10h70M110 10h70"/><path d="M90 2l8 8-8 8-8-8z" fill="currentColor" fill-opacity=".25"/><circle cx="76" cy="10" r="2" fill="currentColor"/><circle cx="104" cy="10" r="2" fill="currentColor"/></svg></div>
 
-  <!-- RSVP -->
+  <!-- ============ RSVP ============ -->
   <section class="card" id="rsvp" aria-label="RSVP">
     <div id="formWrap">
-      <h2 id="rsvpTitle">Kindly RSVP</h2>
-      <p class="lead">Tell us who's coming so we can set enough places (and make enough kachoris!).</p>
+      <p class="kicker">Répondez s'il vous plaît</p>
+      <h2 class="foil" id="rsvpTitle">Will you join us?</h2>
+      <span class="due">Please RSVP by Saturday, October 10</span>
       <form id="form" novalidate>
         <div class="field">
           <label for="name">Your name</label>
@@ -268,7 +296,7 @@
           </div>
         </div>
         <p class="total">Total guests: <b id="total">1</b></p>
-        <button class="submit" id="submit" type="submit">Count us in 🪔</button>
+        <button class="cta submit" id="submit" type="submit">COUNT US IN 🪔</button>
         <p class="msg" id="msg" role="status"></p>
       </form>
     </div>
@@ -277,7 +305,7 @@
       <div class="big">🎆</div>
       <h3>Thank you, <span id="tyName"></span>!</h3>
       <p id="tySummary"></p>
-      <p>We can't wait to celebrate with you — see you on Oct 31 at 12 PM!</p>
+      <p>We can't wait to celebrate with you — see you on October 31 at 12 noon.</p>
       <div class="actions" style="justify-content:center">
         <button class="btn-ghost" id="calBtn2" type="button">Add to calendar</button>
         <button class="btn-ghost" id="again" type="button">Edit / RSVP again</button>
@@ -286,10 +314,12 @@
   </section>
 
   <footer>
-    Shubh Deepavali!
-    <small>With love, The Jain Family</small>
+    <div class="bye foil">Shubh Deepavali</div>
+    <small>With love · The Jain Family</small>
   </footer>
 </main>
+
+<a class="cta sticky off" id="sticky" href="#rsvp">RSVP BY OCT 10</a>
 
 <script>
 /* ============ CONFIG ============ */
@@ -301,7 +331,7 @@ const EVENT = {
   // Oct 31 2026, 12:00 PM CDT (UTC-5) = 17:00 UTC. Ends 4 PM (edit if needed).
   startUTC: "20261031T170000Z",
   endUTC:   "20261031T210000Z",
-  details:  "Join The Jain Family to celebrate our housewarming and Diwali! All-vegetarian feast."
+  details:  "Join The Jain Family to celebrate our housewarming and Diwali!"
 };
 /* ================================== */
 
@@ -309,28 +339,35 @@ const $ = id => document.getElementById(id);
 const state = {adults:1, children:0};
 const MAX = 20;
 
-// string lights + sparkles
+// decorations: string lights, sparkles, mandala
 (() => {
   const l = $("lights");
-  for (let i = 0; i < 26; i++) { l.appendChild(Object.assign(document.createElement("i"), {})); l.lastChild.style.animationDelay = (Math.random()*2.4)+"s"; }
+  for (let i = 0; i < 26; i++) { const b = document.createElement("i"); b.style.animationDelay = (Math.random()*2.6)+"s"; l.appendChild(b); }
   const box = $("sparkles");
-  for (let i = 0; i < 28; i++) {
+  for (let i = 0; i < 30; i++) {
     const s = document.createElement("i");
-    s.style.left = Math.random()*100 + "%";
-    s.style.top = Math.random()*100 + "%";
-    s.style.animationDelay = (Math.random()*4) + "s";
-    s.style.animationDuration = (3 + Math.random()*3) + "s";
+    s.style.left = Math.random()*100 + "%"; s.style.top = Math.random()*100 + "%";
+    s.style.animationDelay = (Math.random()*4) + "s"; s.style.animationDuration = (3 + Math.random()*3) + "s";
     box.appendChild(s);
   }
+  const ns = "http://www.w3.org/2000/svg", m = $("mandala");
+  m.innerHTML = '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a87a2c"/><stop offset=".5" stop-color="#fbe3a6"/><stop offset="1" stop-color="#b8862f"/></linearGradient></defs>';
+  const ring = (n, r, rx, ry, op) => { for (let i = 0; i < n; i++) {
+    const e = document.createElementNS(ns, "ellipse");
+    Object.entries({cx:0, cy:-r, rx, ry, fill:"none", stroke:"url(#g)", "stroke-width":1, opacity:op, transform:`rotate(${i*360/n})`}).forEach(([k,v]) => e.setAttribute(k,v));
+    m.appendChild(e);
+  }};
+  ring(24, 80, 6, 16, .9); ring(16, 60, 8, 18, .75); ring(12, 42, 7, 14, .6);
+  [96, 70, 50].forEach(r => { const c = document.createElementNS(ns, "circle");
+    Object.entries({r, fill:"none", stroke:"url(#g)", "stroke-width":.6, opacity:.5}).forEach(([k,v]) => c.setAttribute(k,v)); m.appendChild(c); });
 })();
 
 // countdown to 12 PM CDT, Oct 31
 (() => {
-  const start = Date.parse("2026-10-31T12:00:00-05:00");
-  const el = $("countdown");
+  const start = Date.parse("2026-10-31T12:00:00-05:00"), el = $("countdown");
   function tick(){
     const ms = start - Date.now();
-    if (ms <= 0) { el.innerHTML = '<div style="min-width:0;padding:10px 18px"><b style="font-size:22px">It\'s party time! 🎉</b></div>'; return; }
+    if (ms <= 0) { el.innerHTML = '<div style="padding:10px 18px"><b style="font-size:22px">The celebration is on! 🎉</b></div>'; return; }
     const d = Math.floor(ms/864e5), h = Math.floor(ms%864e5/36e5), m = Math.floor(ms%36e5/6e4);
     el.innerHTML = [[d,"days"],[h,"hours"],[m,"mins"]].map(([n,u]) => `<div><b>${n}</b><span>${u}</span></div>`).join("");
   }
@@ -344,16 +381,23 @@ if (guest) {
   const first = guest.split(/\s+/)[0];
   $("hello").innerHTML = "Dear <b></b>,";
   $("hello").querySelector("b").textContent = first;
-  $("sub").innerHTML = "We've moved into our new home, and it wouldn't feel complete without you. " +
-    "Come celebrate <strong>Diwali</strong> and our <strong>housewarming</strong> with us — " +
-    "good company, festive vibes and a table full of homemade favourites.";
-  $("note").textContent = `“${first}, your presence is the best gift we could ask for. Come share a plate, a laugh and a diya with us.”`;
+  $("note").textContent = `${first}, a house becomes a home when it's filled with the people you love. We would be honoured to have you with us as we light our first diyas here.`;
   $("rsvpTitle").textContent = `${first}, will you join us?`;
   $("name").value = guest;
-  document.title = `${first}, you're invited! · The Jain Family`;
+  document.title = `${first}, you're invited · The Jain Family`;
 }
 
-// map link
+// sticky RSVP button: only between the hero and the form, and never after an RSVP is sent
+let rsvpSent = false;
+function updateSticky(){
+  const hero = document.querySelector(".invite").getBoundingClientRect();
+  const form = $("rsvp").getBoundingClientRect();
+  $("sticky").classList.toggle("off", rsvpSent || hero.bottom > innerHeight * .25 || form.top < innerHeight);
+}
+addEventListener("scroll", updateSticky, {passive:true});
+addEventListener("resize", updateSticky);
+updateSticky();
+
 $("mapLink").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(EVENT.address);
 
 // steppers
@@ -394,7 +438,7 @@ $("form").addEventListener("submit", async e => {
   msg.className = "msg"; msg.textContent = "";
   if (!name) { msg.className = "msg err"; msg.textContent = "Please enter your name."; $("name").focus(); return; }
 
-  btn.disabled = true; btn.textContent = "Sending…";
+  btn.disabled = true; btn.textContent = "SENDING…";
   const body = new URLSearchParams({name, adults: state.adults, children: state.children});
   try {
     // Apps Script doesn't send CORS headers, so use no-cors (response is opaque; a resolved fetch means it was sent).
@@ -403,7 +447,7 @@ $("form").addEventListener("submit", async e => {
   } catch {
     msg.className = "msg err"; msg.textContent = "Couldn't send — please check your connection and try again.";
   } finally {
-    btn.disabled = false; btn.textContent = "Count us in 🪔";
+    btn.disabled = false; btn.textContent = "COUNT US IN 🪔";
   }
 });
 
@@ -412,6 +456,7 @@ function showThanks(name){
   const a = state.adults, c = state.children;
   $("tySummary").textContent = `We've saved ${a} adult${a>1?"s":""}` + (c ? ` and ${c} child${c>1?"ren":""}` : "") + ".";
   $("formWrap").classList.add("hidden"); $("thanks").classList.remove("hidden");
+  rsvpSent = true; updateSticky();
   $("rsvp").scrollIntoView({behavior:"smooth", block:"center"});
 }
 $("again").onclick = () => { $("thanks").classList.add("hidden"); $("formWrap").classList.remove("hidden"); };
